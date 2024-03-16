@@ -15,14 +15,14 @@ from dataset_tools.templates import (
 ##################################
 PROJECT_NAME: str = "FruitNet and FruitBox Dataset"
 PROJECT_NAME_FULL: str = "FruitNet and FruitBox Dataset"
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
-##################################
+#################################
 LICENSE: License = License.Unknown()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Food(), Industry.Robotics()]
-CATEGORY: Category = Category.Food(extra=Category.Robotics())
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Food()]
+CATEGORY: Category = Category.Food()
 
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection(), CVTask.Identification()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
